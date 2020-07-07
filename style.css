@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap');
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Slab', serif;*/
+
+.coffee-list {
+    background: url(img/background.jpg);
+    background-size: cover;
+}
+
+.coffee-item {
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius: calc(75px / 2);
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.coffee-item:hover {
+    background-color: rgba(50, 50, 50, .7);
+}
+
+.coffee-item img {
+    width: 75px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.coffee-item span {
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+    margin-left: 30px;
+    letter-spacing: 1px;
+}
+
+.coffee-oper {
+    background-color: #dcdcdc;
+    padding: 15px;
+}
+
+.display {
+    border: 2px solid darkgreen;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.display span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cup img, .atm img{
+    width: 100%;
+}
+
+.change-box {
+    border: 3px solid black;
+    background-color: #c8c8c8;
+    min-height: 100px;
+    box-sizing: border-box;
+    
+}
+
+ 
