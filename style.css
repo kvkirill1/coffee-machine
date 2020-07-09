@@ -46,8 +46,17 @@ font-family: 'Roboto Slab', serif;*/
     font-family: 'Montserrat', sans-serif;
 }
 
+.progress-bar {
+    transition: none;
+}
+
 .cup img, .atm img{
     width: 100%;
+}
+
+.cup img {
+    display: none;
+    opacity: 0;
 }
 
 .change-box {

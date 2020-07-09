@@ -11,25 +11,25 @@
 
     <link rel="stylesheet" href="style.css">
     
-    <title>Кофе машина</title>
+    <title>Кофе-машина</title>
 </head>
 <body>
     <div class="container">
         <div class="row mt-2">
             <div class="col-6 coffee-list d-flex flex-column justify-content-around">
-                <div class="coffee-item">
+                <div class="coffee-item" cost="50руб" data-name="Американо" data-name-eng="Americano" onclick="cookCoffee('Америконо', 50, this)">
                     <img src="img/americano.png" alt="americano">
                     <span>Америконо - 50 руб</span>
                 </div>
-                <div class="coffee-item">
+                <div class="coffee-item" onclick="cookCoffee('Каппучино', 92, this)">
                     <img src="img/cappuccino.png" alt="Каппучино">
                     <span>Каппучино - 92 руб</span>
                 </div>
-                <div class="coffee-item">
+                <div class="coffee-item" onclick="cookCoffee('Эспрессо', 66, this)">
                     <img src="img/espresso.png" alt="Эспрессо">
                     <span>"Эспрессо" - 66 руб</span>
                 </div>
-                <div class="coffee-item">
+                <div class="coffee-item" onclick="cookCoffee('Латте', 128, this)">
                     <img src="img/latte.jpg" alt="Латте">
                     <span>Латте - 128 руб</span>
                 </div>
@@ -40,7 +40,7 @@
                         <div class="display">
                             <span>Выберите кофе</span>
                             <div class="progress mt-2">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 0%"></div>
                             </div>
                         </div>
                         <div class="cup mt-3">
@@ -51,7 +51,7 @@
                         <div class="input-group mb-3">
                             <input type="text" class="form-control balance" placeholder="Баланс">
                             <div class="input-group-append">
-                              <span class="input-group-text" id="basic-addon2">&#8381</span>
+                                <span class="input-group-text" id="basic-addon2">&#8381</span>
                             </div>
                         </div>
                         <div class="atm">
@@ -64,17 +64,13 @@
             </div>
         </div>
     </div>
-    
-
-
-
-
 
     <script src="script.js"></script>
+    <!-- <script src="lesson.js"></script> -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"              integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"     crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"     crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     
   </body>
