@@ -54,9 +54,26 @@ font-family: 'Roboto Slab', serif;*/
     width: 100%;
 }
 
+.cash-container {
+    position: absolute;
+    /* background-color: red; */
+    width: 70%;
+    height: 60%;
+    margin: 15% 11%;
+    overflow: hidden;
+}
+.atm{
+    position: relative;
+    z-index: 10;
+}
+
 .cup img {
     display: none;
     opacity: 0;
+}
+
+.change-box, .change-button {
+    z-index: 100;
 }
 
 .change-box {
@@ -64,6 +81,12 @@ font-family: 'Roboto Slab', serif;*/
     background-color: #c8c8c8;
     min-height: 100px;
     box-sizing: border-box;
+    position: relative
+}
+
+.money img{
+    max-width: 200px;
+    z-index: 1000;
     
 }
 
